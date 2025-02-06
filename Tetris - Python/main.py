@@ -27,6 +27,7 @@ class Main:
     def run(self):
         # Main loop
         while True:
+            print("test")
             dt = self.clock.tick() / 1000
             self.screen.fill(BG_COLOUR) 
             self.game_loop()
