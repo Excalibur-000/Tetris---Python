@@ -1,6 +1,11 @@
 import pygame
 from settings import *
-#test
+
+
+
+
+
+
 class Game:
     def __init__(self, screen):
         # Define screen
