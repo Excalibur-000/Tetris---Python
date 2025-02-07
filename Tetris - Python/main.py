@@ -17,6 +17,11 @@ class Main:
         # Creates game object
         self.game = Game(self.screen)
 
+        # Sets window title and sets logo
+        pygame.display.set_caption('Tetris')
+        self.icon = pygame.image.load('Tetris - Python/assets/Visual/logo.png')
+        pygame.display.set_icon(self.icon)
+
     def game_loop(self):        
         # Loops through events and executes the appropriate action
         for event in pygame.event.get():
