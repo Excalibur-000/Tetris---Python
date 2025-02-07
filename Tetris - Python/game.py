@@ -10,13 +10,13 @@ class Game:
         self.camera_group = pygame.sprite.Group()
 
         # Render background image
-        self.background = pygame.image.load('Tetris - Python/assets/grid.png').convert()
+        self.background = pygame.image.load('Tetris - Python/assets/Visual/grid.png').convert()
         self.background = pygame.transform.scale(self.background, (WINDOW_WIDTH, WINDOW_HEIGHT))
 
         # Create text/fonts
-        self.tetris_font = pygame.font.Font(None, 40)
+        self.tetris_font = pygame.font.Font('Tetris - Python/assets/Fonts/Roboto-VariableFont_wdth,wght.ttf', 32)
         self.tetris_text = self.tetris_font.render('Tetris', True, (255, 255, 255))
-        self.title_pos = self.tetris_text.get_rect(center=(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 20))
+        self.title_pos = self.tetris_text.get_rect(center=(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 19))
 
         # Create a display surface
         self.display_surface_width = DISPLAY_WIDTH 
